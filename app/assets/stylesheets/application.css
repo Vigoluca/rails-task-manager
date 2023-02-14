@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+ @import "cards.css";
+body {
+  align-content: center;
+}

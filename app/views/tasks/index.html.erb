@@ -1,0 +1,14 @@
+<ul>
+  <div class="cards">
+    <% @tasks.each do |task| %>
+      <li>
+        <%= link_to task_path(task) do %>
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+            <%= task.title %>
+          </div>
+        <% end %>
+      </li>
+    <% end %>
+  </div>
+</ul>
+<%= link_to "Add a new task", new_task_path, class: "btn btn-success" %>
